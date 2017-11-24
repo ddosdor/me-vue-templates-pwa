@@ -52,7 +52,6 @@ const _startTask = (paths, name, destPath) =>
     .pipe(template({
       name: name,
       upCaseName: _capitalize(name),
-      dateNow : moment().format('YYYY-MM-DD')
     }))
     .pipe(gulp.dest(destPath));
 
