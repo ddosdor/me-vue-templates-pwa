@@ -4,58 +4,63 @@
 
 ## Build Setup
 
-``` bash
-# install dependencies
-npm install
+install dependencies
+``` bash npm install ```
 
-## or
-yarn install
+or
+``` bash yarn install ```
 
-# serve with hot reload at localhost:8080
-npm run dev
+serve with hot reload at localhost:8080
+``` bash npm run dev ```
 
-## or
-yarn dev
+or
+``` bash yarn dev ```
 
-# build for production with minification
-npm run build
+build for production with minification
+``` bash npm run build ```
 
-## or
-yarn build
+or
+``` bash yarn build ```
 
-# build for production and view the bundle analyzer report
-npm run build --report
+build for production and view the bundle analyzer report
+``` bash npm run build --report
 {{#unit}}
+```
 
-## or
-yarn build --report
+or
+``` bash yarn build --report ```
 
-# run unit tests
-npm run unit
+run unit tests
+``` bash npm run unit
 {{/unit}}
 {{#e2e}}
+```
 
-## or
-yarn unit
+or
+``` bash yarn unit
 {{/unit}}
 {{#e2e}}
+```
 
-# run e2e tests
-npm run e2e
+run e2e tests
+``` bash npm run e2e
 {{/e2e}}
 {{#if_or unit e2e}}
+```
 
-## or
-yarn e2e
+or
+``` bash yarn e2e
 {{/e2e}}
 {{#if_or unit e2e}}
+```
 
-# run all tests
-npm test
+run all tests
+``` bash npm test
 {{/if_or}}
+```
 
-## or
-yarn test
+or
+``` bash yarn test
 {{/if_or}}
 ```
 
