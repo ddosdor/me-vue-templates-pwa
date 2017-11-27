@@ -1,14 +1,14 @@
-/* Vuex module - <%= upCaseName %> */
+/* Vuex module - App */
 
 import actions from './actions';
 import mutations from './mutations';
 
 const INITIAL_STATE = {
-
+  pendingActions: [],
 };
 
 const getters = {
-  // all getter goes here
+  pendingActions: state => state.pendingActions,
 };
 
 // VUEX MODULE /////////////////////////////////////////////////////////////////

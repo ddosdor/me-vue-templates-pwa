@@ -1,4 +1,8 @@
-# vue-pwa-boilerplate
+# me-vue-templates-pwa boilerplate
+
+This is my pwa template for vue-cli. It's was forked from original pwa boilerplate - [Oficial PWA Boilerplate](https://github.com/vuejs-templates/pwa).
+
+This template includes, inter alia, scaffolding for components, containers and Vuex modules. It's still work in progress, so more info soon.
 
 > A full-featured [PWA](https://developers.google.com/web/progressive-web-apps/) template with webpack, hot-reload, lint-on-save, unit testing & css extraction.
 

@@ -1,3 +1,5 @@
+/* Vuex mutations types for module <%= upCaseName %> */
+
 import {
   MUTATION_NAME  
 } from './mutation-types';

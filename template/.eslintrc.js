@@ -50,6 +50,11 @@ module.exports = {
     }],
     {{/if_eq}}
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    // disable linebreaks
+    'linebreak-style': 0,
+    "import/prefer-default-export": "off",
+    "no-underscore-dangle" : "off",
+    "prefer-const": "off"   
   }
 }

@@ -1,14 +1,14 @@
-/* Vue container - <%= upCaseName %> */
+/* Vue container - Home */
 import Vue from 'vue';
 import store from '@/store';
 import { mapGetters, mapActions } from 'vuex';
 
 /* child components */
-// example --- import ExampleComponent from '@/components/ExampleComponent';
+import WelcomeVue from '@/components/Home/WelcomeVue';
 
 /* container */
-const <%= upCaseName %> = {
-  components: { },
+const Home = {
+  components: { WelcomeVue },
   store,
 
   computed: {
@@ -16,15 +16,15 @@ const <%= upCaseName %> = {
   },
 
   methods: {
-    ...mapActions([])
+    ...mapActions([]),
   },
 
   template: `
     <div class="my-container">
-      Container <%= upCaseName %>
+      <WelcomeVue />
     </div>
   `,
 };
 
 export default Vue
-  .component('<%= upCaseName %>', <%= upCaseName %>);
+  .component('Home', Home);
