@@ -36,11 +36,11 @@ To generate new Vuex module, type:
 $ gulp container --name MyModule
 ```
 
-## "utils"
+### "utils"
 
 This folder contains all usable functionalities and helpers functions. It contains also decorator, which is used to store current asynchronous methods (api requests).
 
-## "components"
+### "components"
 
 This folder is also in orginal Vue PWA boilerplate, but I decided that each component should be stored in folders corresponding to its container. I also seperate component structure to single files:
 
@@ -121,11 +121,3 @@ If port 8080 is already in use on your machine you must change the port number i
   - Works with one command out of the box:
     - Selenium and chromedriver dependencies automatically handled.
     - Automatically spawns the Selenium server.
-
-### Fork It And Make Your Own
-
-You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
-
-``` bash
-vue init username/repo my-project
-```
