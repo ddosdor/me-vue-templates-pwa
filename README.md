@@ -2,11 +2,73 @@
 
 This is my pwa template for vue-cli. It's was forked from original pwa boilerplate - [Oficial PWA Boilerplate](https://github.com/vuejs-templates/pwa).
 
-This template includes, inter alia, scaffolding for components, containers and Vuex modules. It's still work in progress, so more info soon.
+This template includes, inter alia, scaffolding for components, containers and Vuex modules. It's still work in progress ;)
 
 > A full-featured [PWA](https://developers.google.com/web/progressive-web-apps/) template with webpack, hot-reload, lint-on-save, unit testing & css extraction.
 
-## Documentation
+## Install template
+
+``` bash
+vue init ddosdor/me-vue-templates-pwa my-project
+```
+
+## Project structure
+
+Below is info about folders that are not in the original vue-cli template
+
+### "containers"
+
+It's main component for routes. It contains child components dedicated to a given functionality.
+
+To generate new container, type:
+
+``` bash
+$ gulp container --name MyContainer
+```
+
+### "store"
+
+It's store for Vuex and is divided into modules.
+
+To generate new Vuex module, type:
+
+``` bash
+$ gulp container --name MyModule
+```
+
+## "utils"
+
+This folder contains all usable functionalities and helpers functions. It contains also decorator, which is used to store current asynchronous methods (api requests).
+
+## "components"
+
+This folder is also in orginal Vue PWA boilerplate, but I decided that each component should be stored in folders corresponding to its container. I also seperate component structure to single files:
+
+* index.vue - main component file
+* component.js - component logic
+* style.sass - component SASS style
+
+To generate new component, type:
+
+``` bash
+$ gulp component --name MyComponent
+```
+
+The above command will generate component in the parent component folder. To generate it in the corresponding folder, type:
+
+``` bash
+$ gulp component --name MyComponent --parent MyParentFolder
+```
+
+or
+
+``` bash
+$ gulp component --name MyComponent --parent MyParentFolder/MyParentSubfolder
+```
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Original documentation
 
 - This template builds on top of the main webpack template, so please refer to the [webpack template docs](http://vuejs-templates.github.io/webpack).
 
