@@ -8,7 +8,7 @@
       {{#router}}
       <router-view></router-view>
       {{else}}
-      <hello></hello>
+      <WelcomeVue></WelcomeVue>
       {{/router}}
     </main>
   </div>
@@ -16,13 +16,13 @@
 
 <script>
 {{#unless router}}
-import Hello from './components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import WelcomeVue from '@/components/Home/WelcomeVue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 {{/unless}}
 export default {
   name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
   components: {
-    Hello{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+    WelcomeVue{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{/router}}
 }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
