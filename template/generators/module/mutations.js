@@ -2,7 +2,7 @@
 
 import {
   MUTATION_NAME  
-} from './mutation-types';
+} from './mutations-types';
   
 export default {
   // example
